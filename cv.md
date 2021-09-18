@@ -16,3 +16,13 @@ HTML, CSS
 - Russian - fluent
 - English - elementary
 - French – elementary
+
+## Code
+
+```
+const findSquares = num => {
+  let max = (Math.ceil(num / 2)) ** 2;
+  let min = max - num;
+  return `${max} - ${min}`;
+};
+```
