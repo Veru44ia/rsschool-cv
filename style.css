@@ -131,3 +131,48 @@ h2 {
 .header-link:active {
   opacity: 0.5;
 }
+
+.museum-project,
+.vertical-slider-project {
+  max-width: 550px;
+  height: 270px;
+  opacity: 0.4;
+  transition: all 0.3s ease;
+}
+
+.museum-project:hover,
+.vertical-slider-project:hover {
+  transform: scale(1.1);
+}
+
+.project-wrapper {
+  position: relative;
+  display: block;
+}
+
+.technology {
+  position: absolute;
+  top: 220px;
+  left: 30px;
+  background-color: #2d2b57;
+  color: #fff;
+  padding: 5px 5px;
+}
+
+.project-name {
+  position: absolute;
+  top: 50px;
+  left: 30px;
+  background-color: #2d2b57;
+  color: #fff;
+  padding: 5px 5px;
+}
+
+.description-museum {
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.description-vertical-slider {
+  margin-top: 10px;
+}
