@@ -4,6 +4,16 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: "Libre Baskerville", serif;
   background-color: #fceded;
@@ -12,7 +22,7 @@ body {
   justify-content: center;
 }
 
-.wrapper {
+.content {
   background: #fff;
   display: flex;
   margin: 0 auto;
@@ -28,7 +38,7 @@ body {
 }
 
 .about-me-container {
-  padding: 100px;
+  padding: 50px 100px;
 }
 
 .contacts-container {
@@ -61,12 +71,17 @@ h2 {
   width: 550px;
 }
 
+.header,
 .footer {
   display: flex;
-  background-color: #fff;
+  background-color: #eae8f8;
   justify-content: space-between;
   align-items: center;
-  margin-top: 280px;
+  height: 80px;
+}
+
+.footer {
+  justify-content: space-around;
 }
 
 .github-image {
@@ -77,4 +92,91 @@ h2 {
 .rs-image {
   width: 50px;
   height: 50px;
+}
+
+.my-code {
+  height: 210px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-list {
+  display: flex;
+}
+
+.header-item {
+  font-size: 25px;
+  list-style: none;
+  padding-right: 70px;
+}
+
+.header-item:first-child {
+  padding-left: 15px;
+}
+
+.header-item:last-child {
+  padding-right: 15px;
+}
+
+.header-link {
+  line-height: 25px;
+  letter-spacing: 2px;
+  list-style: none;
+  text-decoration: none;
+  color: #000;
+}
+
+.header-link:hover,
+.header-link:focus,
+.header-link:active {
+  opacity: 0.5;
+}
+
+.museum-project,
+.vertical-slider-project {
+  max-width: 550px;
+  height: 270px;
+  opacity: 0.4;
+  transition: all 0.3s ease;
+}
+
+.museum-project:hover,
+.vertical-slider-project:hover {
+  transform: scale(1.1);
+}
+
+.project-wrapper {
+  position: relative;
+  display: block;
+}
+
+.technology {
+  position: absolute;
+  top: 220px;
+  left: 30px;
+  background-color: #2d2b57;
+  color: #fff;
+  padding: 5px 5px;
+}
+
+.project-name {
+  position: absolute;
+  top: 50px;
+  left: 30px;
+  background-color: #2d2b57;
+  color: #fff;
+  padding: 5px 5px;
+}
+
+.description-museum {
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.description-vertical-slider {
+  margin-top: 10px;
 }
