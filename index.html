@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/shades-of-purple.min.css">
 </head>
 <body>
   <div class="wrapper">
@@ -21,19 +22,84 @@
           <li class="contacts-link">Email: <a href="mailto:vera3188@gmail.com">vera3188@gmail.com</a></li>
         </ul>
       </div>
-      <footer class="footer">
-        <div>
-          <a href="https://github.com/Veru44ia" target="_blank"><img class="github-image" src="./img/github.png" alt="github-image"></a>
+    </header>
+    <div class="content">
+      <aside class="sidebar">
+        <img class="my-photo" src="./img/photo.png" alt="My photo"/>
+        <div class="contacts-container">
+          <h2 class="contacts-title">Contacts:</h2>
+          <ul>
+            <li class="contacts-link">Phone number: <a href=" +375296097842">+375296097842</a></li>
+            <li class="contacts-link">Email: <a href="mailto:vera3188@gmail.com">vera3188@gmail.com</a></li>
+          </ul>
         </div>
-        <div><time datetime="2021">2021</time></div>
-        <div>
-          <a href="https://rs.school/js/" target="_blank"><img class="rs-image" src="./img/rs.svg" alt="rs-image"></a>
+      </aside>
+      <main class="about-me-container">
+        <div class="my-name">
+          <h1>Vera Paliukhovich</h1>
         </div>
-      </footer>
-    </aside>
-    <main class="about-me-container">
-      <div class="my-name">
-        <h1>Vera Paliukhovich</h1>
+        <article class="summary" id="about-me">
+          <h2>About me</h2>
+          <p>
+            I have no programming experience, but I am ready to learn a lot. My goal is to change the field of activity and
+            become a Junior Frontend Developer.
+          </p>
+        </article>
+        <section id="skills">
+          <h2>Skills:</h2>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+        </section>
+        <section id="code">
+          <h2>Code</h2>
+          <pre class="my-code">
+            <code class="javascript">
+  const findSquares = num => {
+    let max = (Math.ceil(num / 2)) ** 2;
+    let min = max - num;
+    return `${max} - ${min}`;
+  };
+            </code>
+          </pre>
+        </section>
+        <section id="education">
+          <h2>Education</h2>
+          <p>Belarusian State Technological University</p>
+        </section>
+        <section id="projects">
+          <h2>Projects</h2>
+          <div class="project-wrapper">
+            <a href="https://rolling-scopes-school.github.io/veru44ia-JSFEPRESCHOOL/museum/" target="_blank"><img class="museum-project" src="./img/museum.jpg" alt="museum"></a>
+            <p class="technology">HTML, CSS</p>
+            <p class="project-name">RSSchool project. Museum Louvre landing page</p>
+            <p class="description-museum">Landing page of the Louvre - one of the largest and most <br> popular art museums in the world.</p>
+          </div>
+          <div class="project-wrapper">
+            <a href="https://rolling-scopes-school.github.io/veru44ia-JSFEPRESCHOOL/vertical-slider/" target="_blank"><img
+                class="vertical-slider-project" src="./img/vertical-slider.jpg" alt="vertical-slider"></a>
+            <p class="technology">HTML, CSS, JS</p>
+            <p class="project-name">RSSchool project. Vertical slider</p>
+            <p class="description-vertical-slider">Vertical slider in JavaScript</p>
+          </div>
+        </section>
+        <section id="languages">
+          <h2>Languages:</h2>
+          <ul>
+            <li>Belarusian - native</li>
+            <li>Russian - fluent</li>
+            <li>English - elementary</li>
+            <li>French – elementary</li>
+          </ul>
+        </section>
+      </main>
+    </div>
+    <footer class="footer">
+      <div>
+        <a href="https://github.com/Veru44ia" target="_blank"><img class="github-image" src="./img/github.png"
+            alt="github-image"></a>
       </div>
       <article class="summary">
         <h2>About me</h2>
@@ -77,5 +143,8 @@ const findSquares = num =&gt; {
       </section>
     </main>
   </div>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script src="./main.js"></script>
 </body>
 </html>
